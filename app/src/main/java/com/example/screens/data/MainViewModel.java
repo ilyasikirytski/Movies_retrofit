@@ -236,7 +236,7 @@ public class MainViewModel extends AndroidViewModel {
         ApiFactory apiFactory = ApiFactory.getInstance();
         ApiService apiService = apiFactory.getApiService();
         compositeDisposable = new CompositeDisposable();
-        Disposable disposable = apiService.getResponse("3348f966e6084875c231e59a4f14e5bd", "ru", sorting, 1000, thisPage)
+        Disposable disposable = apiService.getResponse("apiKey", "ru", sorting, 1000, thisPage)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<Response>() {
