@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Screens</string>
+    <string name="label_name">Название:</string>
+    <string name="label_last_name">Рейтинг:</string>
+</resources>
